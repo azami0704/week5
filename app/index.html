@@ -1,0 +1,208 @@
+---
+title: 後台
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container-fluid d-flex justify-content-start vh-100 ms-0 ps-0">
+  <nav class="main-navbar d-flex flex-column justify-content-start align-items-start col-auto bg-light pt-4 pr-80">
+    <a class="navbar-brand mb-3 pl-32" href="#"><img src="assets/images/logo-ANSWER.svg" alt="LOGO"></a>
+    <ul class="nav flex-column mt-3">
+        <li class="nav-item">
+          <a class="nav-link link-dark fw-bold pt-1 pb-1 mb-3 pl-32" href="#"><span class="material-symbols-outlined">
+            insert_chart
+            </span>Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark fw-bold pt-1 pb-1 mb-3 pl-32" href="#"><span class="material-symbols-outlined">
+            forum
+            </span>Question</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark fw-bold pt-1 pb-1 mb-3 pl-32"  aria-current="page" href="#"><span class="material-symbols-outlined">
+            assignment
+            </span>Assignment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark fw-bold pt-1 pb-1 mb-3 pl-32" href="#"><span class="material-symbols-outlined">
+            video_library
+            </span>Course</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link-dark fw-bold pt-1 pb-1 mb-3 pl-32" href="#"><span class="material-symbols-outlined">
+              group
+              </span>Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark fw-bold pt-1 pb-1 pl-32" href="#"><span class="material-symbols-outlined">
+              settings
+              </span>Settings</a>
+          </li>
+    </ul>
+    <div class="d-flex mt-auto pl-32">
+      <div class="flex-shrink-0  mb-1">
+        <div class="head-pic rounded-circle"></div>
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <p class="mb-1 fw-bold lh-19">Andy Chen</p>
+        <p class="text-secondary fz-14 lh-17">andy0401@mail.com</p>
+      </div>
+    </div>
+  </nav>
+  <div class="assignment container bg-white m-32">
+    <ul class="top-nav nav align-items-center mb-36">
+      <li class="nav-item mr-50">
+        <h4 class="fw-bold">Assignment</h4>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-dark fw-bold" href="#">
+          All Courses<span class="material-symbols-outlined">
+            expand_more
+            </span>
+        </a>
+      </li>
+      <div class="ms-auto d-flex">
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="#"><span class="material-symbols-outlined">
+            search
+            </span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark pe-0" href="#"><span class="material-symbols-outlined">
+            notifications_active
+            </span></a>
+        </li>
+      </div>
+    </ul>
+    <div class="wrap row">
+        <div class="assisgnment-padding d-flex justify-content-between fw-bold ps-0">
+          <a href="#" class="link-dark text-decoration-none">All (4)<span class="material-symbols-outlined">
+            expand_more
+            </span></a> 
+          <div class="text-secondary fz-12">2 comments</div>
+        </div>
+      <ul class="list-group col-4 mt-1" id="assisgnment-list">
+        <li class="list-group-item">
+          <a href="#" class="assisgnment-wrap">
+            <div class="d-flex justify-content-between text-dark fz-12 lh-24 mb-1">
+              <p class="mb-0">Chapter Assignment 2</p>
+              <p class="mb-0">4 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between flex-nowrap">
+              <p class="text-dark fw-bold mb-0">Please check this file…</p>
+              <p class="text-secondary fz-12 lh-24 mb-0">Emily Wang</p>
+            </div>
+          </a>
+        </li>
+        <li class="list-group-item">              
+          <a href="#" class="assisgnment-wrap">
+          <div class="d-flex justify-content-between text-dark fz-12 lh-24 mb-1">
+            <p class="mb-0">Chapter Assignment 1</p>
+            <p class="mb-0">12 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between flex-nowrap">
+            <p class="text-dark fw-bold mb-0">My Homework</p>
+            <p class="text-secondary fz-12 lh-24 mb-0">David Xu</p>
+          </div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" class="assisgnment-wrap">
+        <div class="d-flex justify-content-between text-dark fz-12 lh-24 mb-1">
+          <p class="mb-0">Final Assignment</p>
+          <p class="mb-0">18 hrs ago</p>
+        </div>
+        <div class="d-flex justify-content-between flex-nowrap">
+          <p class="text-dark fw-bold mb-0">Have a problem with this…</p>
+          <p class="text-secondary fz-12 lh-24 mb-0">Tony Wei</p>
+        </div>
+      </a>
+      </li>
+      <li class="list-group-item">
+          <a href="#" class="assisgnment-wrap">
+          <div class="d-flex justify-content-between text-dark fz-12 lh-24 mb-1">
+            <p class="mb-0">Final Assignment</p>
+            <p class="mb-0">19 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between flex-nowrap">
+            <p class="text-dark fw-bold mb-0">Did I do it right?</p>
+            <p class="text-secondary fz-12 lh-24 mb-0">Christina Lin</p>
+          </div>
+        </a>
+        </li>
+      </ul>
+      <div class="right-area col-8">
+        <div class="card mb-3">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="text-dark">
+              <p class="fz-12 lh-24 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+              <p class="text-dark fw-bold mb-0">Please check this file for me, thanks!</p>
+            </div>
+            <div class="">
+              <span class="material-symbols-outlined">
+                more_vert
+                </span>
+            </div>
+          </div>
+          <div class="card-body d-flex pb-2">
+            <div class="head-pic-emily rounded-circle col-auto"></div>
+            <div class="card-content ms-2 border-bottom">
+              <p class="card-title fw-bold mb-0">Emily Wang</p>
+              <time class="text-secondary fz-12">10:38 AM (4 hours ago)</time>
+              <p class="card-text mt-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+              <button type="button" class="btn btn-light border mb-3 fw-bold"><span class="material-symbols-outlined me-2">
+                attach_file
+                </span>HW-2-David.zip</button>
+            </div>
+          </div>
+          <div class="card-body d-flex pt-2 pb-22">
+            <div class="head-pic rounded-circle col-auto"></div>
+            <div class="card-content ms-2">
+              <div class="d-flex justify-content-between">
+                <div class="username">
+                  <p class="card-title fw-bold mb-0">Andy Chen (You)</p>
+                  <time class="text-secondary fz-12">13:24 AM (1 hours ago)</time>
+                </div>
+                <div class="fuction-icon">
+                  <span class="material-symbols-outlined nofill">
+                    grade
+                    </span>
+                    <span class="material-symbols-outlined">
+                      edit
+                      </span>
+                </div>
+              </div>
+              <p class="card-text  mt-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can: 　<br><br><span class="ps-3"></span>• adjust the <span class="text-success bg-light font-family-roboto">vertical-align</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the image to position it elsewhere (e.g. the <span class="text-success bg-light font-family-roboto">middle</span>&nbsp;&nbsp;&nbsp;&nbsp;) or 　<br><span class="ps-3"></span>• change the <span class="text-success bg-light font-family-roboto">display</span> so it isn’t inline.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-fuction d-flex justify-content-between">
+          <nav aria-label="Page navigation">
+            <ul class="pagination border-0">
+              <li class="page-item">
+                <a class="page-link border-0 link-dark" href="#" aria-label="Previous">
+                  <span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 link-dark" href="#" aria-label="Next">
+                  <span class="material-symbols-outlined">
+                    navigate_next
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="button align-items-center">
+            <button type="button" class="btn btn-outline-success me-3 pt-2 pb-2 pl-33 pr-33">Mark as read</button>
+            <button type="button" class="btn btn-success pt-2 pb-2 pl-33 pr-33">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
